@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    /* [SerializeField] private float moveSpeed;//Controls how fast the object moves. */
+    /*[SerializeField] private float moveSpeed; //Controls how fast the object moves.*/
 
-    public int moveSpeed; // Controls how fast the player moves.
+    public float moveSpeed; // Controls how fast the player moves.
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +37,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position += Time.deltaTime * moveSpeed * Vector3.back;
         }
+
     }
 }
